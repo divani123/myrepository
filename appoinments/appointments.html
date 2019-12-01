@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<?php
+include('connection.php');
+
+?>
+
+	<meta charset="utf-8">
+	<title>Appointment form</title>
+	<link rel="stylesheet" type="text/css" href="app.css">
+
+</head>
+<body>
+	<div class="appointment">
+
+<form   action="connection.php" method="post">
+	<h2>Make an appointment</h2>
+<input type="text" name="username" placeholder="Name">
+<input type="text" name="address" placeholder="Address">
+<input type="text" name="age" placeholder="Age">
+<input type="text" name="tele" placeholder="Tele">
+<input type="text" name="doctersname" placeholder="Docters Name">
+
+<select name="Docters Name"><br><br>
+	<option >Docters Name</option>
+	<option value="Mr.Perera">Mr.Perera</option>
+	<option value="Mr.Thilakarathna">Mr.Thilakarathna</option>
+	<option value="Mr.Rathnayka">Mr.Rathnayka</option>
+	<option value="Mr.Gunarathna">Mr.Gunarathna</option>
+
+</select><br>
+<input type="text" name="channelingdate" placeholder="Channeling Date">
+<input type="month" min="2015-01" max="2048-01">
+
+<br>
+<br>
+
+<div id="container">
+ <a href=""><input type="submit" value="Make an Appointment"></a></div><br>
+ <div id="container">
+ <a href=""><input type="button" value="Cancel"></a><br><br>
+ 
+
+</div>
+</form>
+</div>
+</body>
+</html>
